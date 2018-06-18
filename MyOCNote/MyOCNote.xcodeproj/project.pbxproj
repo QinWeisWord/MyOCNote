@@ -13,6 +13,9 @@
 		7ECE794320D608DA00D9837B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ECE794220D608DA00D9837B /* Assets.xcassets */; };
 		7ECE794620D608DA00D9837B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ECE794420D608DA00D9837B /* LaunchScreen.storyboard */; };
 		7ECE794920D608DA00D9837B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECE794820D608DA00D9837B /* main.m */; };
+		7ECE795220D613C400D9837B /* RuntimeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECE795120D613C400D9837B /* RuntimeViewController.m */; };
+		7ECE795520D61ABA00D9837B /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECE795420D61ABA00D9837B /* Person.m */; };
+		7EF01EB420D788C300A0374A /* Person+Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF01EB320D788C300A0374A /* Person+Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		7ECE794520D608DA00D9837B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7ECE794720D608DA00D9837B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7ECE794820D608DA00D9837B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7ECE795020D613C400D9837B /* RuntimeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RuntimeViewController.h; sourceTree = "<group>"; };
+		7ECE795120D613C400D9837B /* RuntimeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeViewController.m; sourceTree = "<group>"; };
+		7ECE795320D61ABA00D9837B /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		7ECE795420D61ABA00D9837B /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		7EF01EB220D788C300A0374A /* Person+Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+Student.h"; sourceTree = "<group>"; };
+		7EF01EB320D788C300A0374A /* Person+Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+Student.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,7 @@
 				7ECE793A20D608D900D9837B /* AppDelegate.m */,
 				7ECE793C20D608D900D9837B /* ViewController.h */,
 				7ECE793D20D608D900D9837B /* ViewController.m */,
+				7ECE794F20D6130500D9837B /* RunTime */,
 				7ECE793F20D608D900D9837B /* Main.storyboard */,
 				7ECE794220D608DA00D9837B /* Assets.xcassets */,
 				7ECE794420D608DA00D9837B /* LaunchScreen.storyboard */,
@@ -69,6 +79,19 @@
 				7ECE794820D608DA00D9837B /* main.m */,
 			);
 			path = MyOCNote;
+			sourceTree = "<group>";
+		};
+		7ECE794F20D6130500D9837B /* RunTime */ = {
+			isa = PBXGroup;
+			children = (
+				7ECE795020D613C400D9837B /* RuntimeViewController.h */,
+				7ECE795120D613C400D9837B /* RuntimeViewController.m */,
+				7ECE795320D61ABA00D9837B /* Person.h */,
+				7ECE795420D61ABA00D9837B /* Person.m */,
+				7EF01EB220D788C300A0374A /* Person+Student.h */,
+				7EF01EB320D788C300A0374A /* Person+Student.m */,
+			);
+			path = RunTime;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +165,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ECE793E20D608D900D9837B /* ViewController.m in Sources */,
+				7ECE795220D613C400D9837B /* RuntimeViewController.m in Sources */,
+				7ECE795520D61ABA00D9837B /* Person.m in Sources */,
 				7ECE794920D608DA00D9837B /* main.m in Sources */,
+				7EF01EB420D788C300A0374A /* Person+Student.m in Sources */,
 				7ECE793B20D608D900D9837B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +311,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TTL877WEJZ;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = MyOCNote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +329,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TTL877WEJZ;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = MyOCNote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
